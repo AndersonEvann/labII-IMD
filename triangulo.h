@@ -1,15 +1,15 @@
 class Triangulo {
 	private:
-		int lado; //triangulo equilatero tem lados iguais, portanto basta um unico lado;
-		int area;
-		int perimetro;
+		double lado; //triangulo equilatero tem lados iguais, portanto basta um unico lado;
+		double area;
+		double perimetro;
 
 	public:
-		Triangulo(int l);
+		Triangulo(double l);
 		~Triangulo();
 
-		int setArea();
-		int setPerimetro();
+		double setArea();
+		double setPerimetro();
 
 		void print();
 };

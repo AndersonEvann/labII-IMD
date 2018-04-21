@@ -2,18 +2,18 @@
 
 #include "triangulo.h"
 
-Triangulo::Triangulo(int l) {
+Triangulo::Triangulo(double l) {
 	lado = l;
 }
 
 Triangulo::~Triangulo() {}
 
-int Triangulo::setArea() {
+double Triangulo::setArea() {
 	area = (lado * lado) / 2;
 	return area;
 }
 
-int Triangulo::setPerimetro() {
+double Triangulo::setPerimetro() {
 	perimetro = 3 * lado;
 	return perimetro;
 }
