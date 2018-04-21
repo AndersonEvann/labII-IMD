@@ -20,5 +20,5 @@ double Circulo::setPerimetro() {
 
 void Circulo::print() {
 	std::cout << "Area do circulo: " << area << std::endl;
-	std::cout << "Perimetro do circulo: " << perimetro << std::endl;
+	std::cout << "Comprimento da circunferencia: " << perimetro << std::endl;
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 #include "triangulo.h"
 
@@ -9,7 +10,7 @@ Triangulo::Triangulo(double l) {
 Triangulo::~Triangulo() {}
 
 double Triangulo::setArea() {
-	area = (lado * lado) / 2;
+	area = (pow(lado, 2) * sqrt(3)) / 4;
 	return area;
 }
 
