@@ -70,8 +70,14 @@ int main(int argc, char const *argv[]) {
 		e.setArea();
 
 		e.print();
-	} else { // uma mensagem para tratar erros nos parametros passados.
-		std::cout << "Ocorreu um erro. Algum campo invalido fora digitado." << std::endl;
+	} else {
+		std::cout << "Como executar o programa..." << std::endl;
+		std::cout << "./programa nomeDaFormaGeometrica parametro(s)." << std::endl << std::endl;
+		std::cout << "qtd de parametro(s): " << std::endl;
+		std::cout << "triangulo=1(lado); retangulo=2(base, altura); quadrado=1(lado); circulo=1(raio);" <<std::endl;
+		std::cout << "piramide=2(aresta da base, altura); cubo=1(aresta); paralelepipedo=3(aresta um, dois e tres); esfera=1(raio)." << std::endl << std::endl;
+		std::cout << "OBS: não usar letras maiúsculas nem acentuação gráfica no mome dos sólidos geometricos." << std::endl;
+		std::cout << "EXs: ./geometria triangulo 2" << std::endl << "./geometria paralelepipedo 2 4 6" << std::endl;
 	}
 
 	return 0;
