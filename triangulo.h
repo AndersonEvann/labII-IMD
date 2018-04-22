@@ -1,6 +1,6 @@
 class Triangulo {
 	private:
-		double lado; //triangulo equilatero tem lados iguais, portanto basta um unico lado;
+		double lado; /** @brief triangulo equilatero tem lados iguais, portanto basta um unico lado. */
 		double area;
 		double perimetro;
 

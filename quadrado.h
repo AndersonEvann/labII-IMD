@@ -1,6 +1,6 @@
 class Quadrado {
 	private:
-		double lado; //so precisa de um lado pois o quadrado tem os 4 lados iguais.
+		double lado; /** @brief so precisa de um lado pois o quadrado tem os 4 lados iguais. */
 		double area;
 		double perimetro;
 

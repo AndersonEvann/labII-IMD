@@ -1,3 +1,9 @@
+/**
+* @file main.cpp
+* @brief Programa que calcula area, volume ou perimetro de alguns sólidos geometricos.
+* @author Anderson Evangelista da Silva
+*/
+
 #include <iostream>
 #include <string>
 
@@ -11,11 +17,11 @@
 #include "paralelepipedo.h"
 #include "esfera.h"
 
-std::string::size_type sz; // necessario para conversão das strings literais para double.
+std::string::size_type sz; /** @brief necessario para conversão das strings literais para double. */
 
 int main(int argc, char const *argv[]) {
-	if(std::string(argv[1]) == "triangulo") { //convertendo argv[1] para string para fazer a comparação. LINHAS: 17, 24, 31, 38, 45, 52, 59, 66.
-		Triangulo t(std::stod(argv[2], &sz)); //convertendo de string literal para double para passar para o construtor. LINHAS: 18, 25, 32, 39, 46, 53, 60, 67.
+	if(std::string(argv[1]) == "triangulo") { /** @brief convertendo argv[1] para string para fazer a comparação. LINHAS: 17, 24, 31, 38, 45, 52, 59, 66. */
+		Triangulo t(std::stod(argv[2], &sz)); /** @brief convertendo de string literal para double para passar para o construtor. LINHAS: 18, 25, 32, 39, 46, 53, 60, 67. */
 
 		t.setArea();
 		t.setPerimetro();
@@ -70,7 +76,7 @@ int main(int argc, char const *argv[]) {
 		e.setArea();
 
 		e.print();
-	} else {
+	} else { /** @brief tratamento quando os parametros passados estão incorretos. */
 		std::cout << "Como executar o programa..." << std::endl;
 		std::cout << "./programa nomeDaFormaGeometrica parametro(s)." << std::endl << std::endl;
 		std::cout << "qtd de parametro(s): " << std::endl;

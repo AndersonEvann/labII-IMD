@@ -18,10 +18,10 @@ double Piramide::setVolume() {
 double Piramide::setArea() {
 	double Abase = pow(arestaDaBase, 2);
 	double Alateral;
-	double a, b, c; //para calcular a area do triangulo vamos calcular pitagoras primeiro.
+	double a, b, c; /** @brief variaveis para ultilizarmos no calculo de pitagoras. */
 	b = altura;
 	c = arestaDaBase / 2;
-	a = sqrt(pow(b, 2) + pow(c, 2)); //pegando a aresta da altura e formando uma reta até um vertice da base podemos calcular a area(Atriangulo).
+	a = sqrt(pow(b, 2) + pow(c, 2)); /** @brief calculando pitagoras para obter em seguida a area do triangulo. */
 	double Atriangulo = (c * a) / 2;
 	Alateral = Atriangulo * 8;
 	area = Abase + Alateral;
